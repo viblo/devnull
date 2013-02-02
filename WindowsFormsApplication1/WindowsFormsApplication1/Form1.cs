@@ -10,6 +10,11 @@ using System.Windows.Forms;
 
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using System.Net;
+using System.IO;
+using System.Net.Cache;
+using System.Net.Security;
+using System.Web;
 namespace WindowsFormsApplication1
 {
     public partial class Form1 : Form
@@ -54,27 +59,79 @@ namespace WindowsFormsApplication1
         {
             var g = this.CreateGraphics();
 
-
+            
 
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            var s2 = @"{""unix"":163,""uniy"":172,""univecx"":0,""univecy"":0,""systemx"":0,""systemy"":0,""systemvecx"":0,""systemvecy"":0,""currentsystem"":""none"",""currentplanet"":""none"",""name"":""General Dynamics India Class ISV [Kirks]"",""peer"":""10.0.1.24:51948"",""drones"":[{""droneid"":""rdrAzVO"",""map"":null,""name"":""ISV Drone 0 [Kirks]""},{""droneid"":""rODTwt8"",""map"":null,""name"":""ISV Drone 1 [Kirks]""},{""droneid"":""rW2kBt7"",""map"":null,""name"":""ISV Drone 2 [Kirks]""}],""teamid"":""r5iqpcP"",""counter"":9389}";
-            JObject rss = JObject.Parse(s2);
+            var rss = ApiWrapper.GetData("ship&arg=show");
 
-            var x = rss["unix"].Value<int>();
-            var y = rss["uniy"].Value<int>();
+            var x = rss["unix"].Value<int>()*2;
+            var y = rss["uniy"].Value<int>()*2;
 
             var g = this.CreateGraphics();
 
             var p = new Pen(Color.Red);
-            g.DrawArc(p, new Rectangle(x, y, 10, 10),0f,360);
+            g.DrawArc(p, new Rectangle(x, y, 10, 10), 0f, 360);
 
             g.Dispose();
 
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            var t = comboBox1.SelectedValue.ToString();
+            var enc = HttpUtility.UrlPathEncode(t);
 
+            var s = "ship&arg=setunidest&arg2=" +enc;
+            var r = ApiWrapper.GetData(s);
+        }
+
+
+    }
+
+
+    public class ApiWrapper
+    {
+        static string addr = "https://lostinspace.lanemarknad.se:8000/api2";
+        private static int port = 8000;
+        private static string apiKey = "7bcd9893-bb21-464f-b4a7-48a8a8663334";
+        private static string session = "3af98f60-0a24-4867-a889-71c1b878eab1";
+
+
+        public static JObject GetData(string command, Dictionary<string, string> vars = null)
+        {
+            ServicePointManager.ServerCertificateValidationCallback += new RemoteCertificateValidationCallback(ValidateRemoteCertificate);
+
+            string uriString = addr;
+
+            uriString += "/?session=" + session;
+            if (vars != null)
+                foreach (KeyValuePair<string, string> kvp in vars)
+                {
+                    uriString += "&" + kvp.Key + "=" + kvp.Value;
+                }
+
+            uriString += "&command=" + command;
+
+            Uri uri = new Uri(uriString);
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(uri);
+            //request.CookieContainer.Add(uri, new Cookie("devnull_apikey", apiKey));
+            //request.CookieContainer.Add(uri, new Cookie("devnull_session", session));
+
+
+
+            var response = request.GetResponse();
+
+            Stream resStream = response.GetResponseStream();
+            StreamReader reader = new StreamReader(resStream);
+            return JObject.Parse(reader.ReadToEnd());
+        }
+
+        private static bool ValidateRemoteCertificate(object sender, System.Security.Cryptography.X509Certificates.X509Certificate certificate, System.Security.Cryptography.X509Certificates.X509Chain chain, SslPolicyErrors sslPolicyErrors)
+        {
+            return true;
+        }
     }
 }
