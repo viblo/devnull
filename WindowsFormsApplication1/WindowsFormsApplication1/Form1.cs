@@ -37,8 +37,8 @@ namespace WindowsFormsApplication1
             foreach (var c in rss["stars"])
             {
 
-                var x = c["x"].Value<int>();
-                var y = c["y"].Value<int>();
+                var x = c["x"].Value<int>() * 2;
+                var y = c["y"].Value<int>() * 2;
                 var p = new Pen(Color.Black);
                 g.DrawRectangle(p, new Rectangle(x, y, 10, 10));
                 string n = c["name"].Value<string>();
@@ -46,6 +46,30 @@ namespace WindowsFormsApplication1
                 names.Add(n);
             }
             comboBox1.DataSource = names;
+
+            g.Dispose();
+        }
+
+        private void comboBox1_SelectedValueChanged(object sender, EventArgs e)
+        {
+            var g = this.CreateGraphics();
+
+
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            var s2 = @"{""unix"":163,""uniy"":172,""univecx"":0,""univecy"":0,""systemx"":0,""systemy"":0,""systemvecx"":0,""systemvecy"":0,""currentsystem"":""none"",""currentplanet"":""none"",""name"":""General Dynamics India Class ISV [Kirks]"",""peer"":""10.0.1.24:51948"",""drones"":[{""droneid"":""rdrAzVO"",""map"":null,""name"":""ISV Drone 0 [Kirks]""},{""droneid"":""rODTwt8"",""map"":null,""name"":""ISV Drone 1 [Kirks]""},{""droneid"":""rW2kBt7"",""map"":null,""name"":""ISV Drone 2 [Kirks]""}],""teamid"":""r5iqpcP"",""counter"":9389}";
+            JObject rss = JObject.Parse(s2);
+
+            var x = rss["unix"].Value<int>();
+            var y = rss["uniy"].Value<int>();
+
+            var g = this.CreateGraphics();
+
+            var p = new Pen(Color.Red);
+            g.DrawArc(p, new Rectangle(x, y, 10, 10),0f,360);
 
             g.Dispose();
 
