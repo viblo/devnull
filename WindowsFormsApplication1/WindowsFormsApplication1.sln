@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApplication1", "WindowsFormsApplication1\WindowsFormsApplication1.csproj", "{56A4E1C4-BC05-4FF8-9FA3-CABDF9308FAB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiWrapper", "..\ApiWrapper\ApiWrapper\ApiWrapper.csproj", "{4BBA01D4-CDB6-48DE-A403-0561D95F82BD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{56A4E1C4-BC05-4FF8-9FA3-CABDF9308FAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{56A4E1C4-BC05-4FF8-9FA3-CABDF9308FAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{56A4E1C4-BC05-4FF8-9FA3-CABDF9308FAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BBA01D4-CDB6-48DE-A403-0561D95F82BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BBA01D4-CDB6-48DE-A403-0561D95F82BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BBA01D4-CDB6-48DE-A403-0561D95F82BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BBA01D4-CDB6-48DE-A403-0561D95F82BD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

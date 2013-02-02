@@ -22,3 +22,16 @@ C:\code\github\devnull\WindowsFormsApplication1\WindowsFormsApplication1\obj\Deb
 C:\code\github\devnull\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form1.resources
 C:\code\github\devnull\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
 C:\code\github\devnull\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+c:\Users\Michael Sundman\Documents\GitHub\devnull\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+c:\Users\Michael Sundman\Documents\GitHub\devnull\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+c:\Users\Michael Sundman\Documents\GitHub\devnull\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+c:\Users\Michael Sundman\Documents\GitHub\devnull\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+c:\Users\Michael Sundman\Documents\GitHub\devnull\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+c:\Users\Michael Sundman\Documents\GitHub\devnull\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\Newtonsoft.Json.pdb
+c:\Users\Michael Sundman\Documents\GitHub\devnull\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\Newtonsoft.Json.xml
+c:\Users\Michael Sundman\Documents\GitHub\devnull\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+c:\Users\Michael Sundman\Documents\GitHub\devnull\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form1.resources
+c:\Users\Michael Sundman\Documents\GitHub\devnull\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+c:\Users\Michael Sundman\Documents\GitHub\devnull\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+c:\Users\Michael Sundman\Documents\GitHub\devnull\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\ApiWrapper.dll
+c:\Users\Michael Sundman\Documents\GitHub\devnull\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\ApiWrapper.pdb
