@@ -1,0 +1,1 @@
+C:\Users\Michael Sundman\Documents\GitHub\devnull\TestEmptyConsoleApp\TestEmptyConsoleApp\bin\Debug\TestEmptyConsoleApp.exe.config
