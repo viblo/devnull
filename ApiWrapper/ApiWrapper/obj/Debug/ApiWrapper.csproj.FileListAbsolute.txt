@@ -1,0 +1,7 @@
+C:\Users\Michael Sundman\Documents\GitHub\devnull\ApiWrapper\ApiWrapper\bin\Debug\ApiWrapper.dll
+C:\Users\Michael Sundman\Documents\GitHub\devnull\ApiWrapper\ApiWrapper\bin\Debug\ApiWrapper.pdb
+C:\Users\Michael Sundman\Documents\GitHub\devnull\ApiWrapper\ApiWrapper\obj\Debug\ApiWrapper.dll
+C:\Users\Michael Sundman\Documents\GitHub\devnull\ApiWrapper\ApiWrapper\obj\Debug\ApiWrapper.pdb
+C:\Users\Michael Sundman\Documents\GitHub\devnull\ApiWrapper\ApiWrapper\bin\Debug\ApiWrapper.dll.CodeAnalysisLog.xml
+C:\Users\Michael Sundman\Documents\GitHub\devnull\ApiWrapper\ApiWrapper\bin\Debug\ApiWrapper.dll.lastcodeanalysissucceeded
+C:\Users\Michael Sundman\Documents\GitHub\devnull\ApiWrapper\ApiWrapper\bin\Debug\Newtonsoft.Json.dll

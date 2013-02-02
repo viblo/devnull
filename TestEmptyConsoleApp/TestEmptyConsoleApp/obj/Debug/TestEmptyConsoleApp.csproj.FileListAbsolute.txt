@@ -1,1 +1,7 @@
 C:\Users\Michael Sundman\Documents\GitHub\devnull\TestEmptyConsoleApp\TestEmptyConsoleApp\bin\Debug\TestEmptyConsoleApp.exe.config
+C:\Users\Michael Sundman\Documents\GitHub\devnull\TestEmptyConsoleApp\TestEmptyConsoleApp\obj\Debug\TestEmptyConsoleApp.csprojResolveAssemblyReference.cache
+C:\Users\Michael Sundman\Documents\GitHub\devnull\TestEmptyConsoleApp\TestEmptyConsoleApp\bin\Debug\TestEmptyConsoleApp.exe
+C:\Users\Michael Sundman\Documents\GitHub\devnull\TestEmptyConsoleApp\TestEmptyConsoleApp\bin\Debug\TestEmptyConsoleApp.pdb
+C:\Users\Michael Sundman\Documents\GitHub\devnull\TestEmptyConsoleApp\TestEmptyConsoleApp\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Michael Sundman\Documents\GitHub\devnull\TestEmptyConsoleApp\TestEmptyConsoleApp\obj\Debug\TestEmptyConsoleApp.exe
+C:\Users\Michael Sundman\Documents\GitHub\devnull\TestEmptyConsoleApp\TestEmptyConsoleApp\obj\Debug\TestEmptyConsoleApp.pdb
