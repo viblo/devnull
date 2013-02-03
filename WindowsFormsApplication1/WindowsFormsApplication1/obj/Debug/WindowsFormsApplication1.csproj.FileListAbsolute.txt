@@ -35,3 +35,5 @@ c:\Users\Michael Sundman\Documents\GitHub\devnull\WindowsFormsApplication1\Windo
 c:\Users\Michael Sundman\Documents\GitHub\devnull\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
 c:\Users\Michael Sundman\Documents\GitHub\devnull\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\ApiWrapper.dll
 c:\Users\Michael Sundman\Documents\GitHub\devnull\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\ApiWrapper.pdb
+C:\code\github\devnull\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\ApiWrapper.dll
+C:\code\github\devnull\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\ApiWrapper.pdb
